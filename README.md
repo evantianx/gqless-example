@@ -1,0 +1,1 @@
+An experiment of a very alpha library named [gqless](https://gqless.dev/)
