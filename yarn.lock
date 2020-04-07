@@ -1322,6 +1322,13 @@
     prettier "^1.19.1"
     tslib "^1.11.1"
 
+"@gqless/react@^0.0.1-alpha.28":
+  version "0.0.1-alpha.28"
+  resolved "https://registry.yarnpkg.com/@gqless/react/-/react-0.0.1-alpha.28.tgz#34f6a483e2d3b7f9c2436bfdb4c2b4c564d149c0"
+  integrity sha512-eUxmAqh6BZ0ddCpuAicVDPaCWbOobWMhiSA+criQZpDEijiI94ubkKm/dPpTqmbKr2erMuZ4qzpH2JcVuN6DUg==
+  dependencies:
+    tslib "^1.11.1"
+
 "@gqless/schema@^0.0.1-alpha.30":
   version "0.0.1-alpha.31"
   resolved "https://registry.yarnpkg.com/@gqless/schema/-/schema-0.0.1-alpha.31.tgz#76903546ad9090363dcc21a69b672e398bcb5f3b"
@@ -7659,6 +7666,11 @@ normalize-url@^4.1.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-4.5.0.tgz#453354087e6ca96957bd8f5baf753f5982142129"
   integrity sha512-2s47yzUxdexf1OhyRi4Em83iQk0aPvwTddtFz4hnSSw9dCEsLEGf6SwIO8ss/19S9iBb5sJaOuTvTGDeZI00BQ==
+
+notyf@^3.6.0:
+  version "3.6.0"
+  resolved "https://registry.yarnpkg.com/notyf/-/notyf-3.6.0.tgz#7a810875b95bcfd35eace746d4b2de62ff0236b7"
+  integrity sha512-TqirJJOj5xTrkUGbat94aeFdBCMuJqlxvFAeySV08WRhcZDVzegIsQrYgek1ZN/Vhc+Ux3BgUmndS4ii1W2TJg==
 
 npm-run-path@^2.0.0:
   version "2.0.2"

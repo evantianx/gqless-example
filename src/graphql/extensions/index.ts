@@ -1,3 +1,6 @@
+import {Notyf} from 'notyf';
+import 'notyf/notyf.min.css';
+
 export const Query = {};
 
 /**
@@ -17,3 +20,11 @@ export const Query = {};
 //     console.log('follow', user.id)
 //   }
 // })
+
+const notyf = new Notyf();
+
+export const Ship = ship => ({
+  showActive() {
+    ship.active ? notyf.success('This ship is active') : notyf.error('This ship is not active')
+  }
+})

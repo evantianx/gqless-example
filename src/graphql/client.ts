@@ -1,7 +1,7 @@
 import { Client, QueryFetcher } from "gqless";
 import { schema, Query } from "./generated";
 
-const endpoint = "https://graphql-pokemon.now.sh/";
+const endpoint = "https://api.spacex.land/graphql/";
 
 const fetchQuery: QueryFetcher = async (query, variables) => {
   const response = await fetch(endpoint, {

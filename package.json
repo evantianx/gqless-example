@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@gqless/react": "^0.0.1-alpha.28",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -11,6 +12,7 @@
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "gqless": "^0.0.1-alpha.29",
+    "notyf": "^3.6.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -42,7 +44,7 @@
     "@gqless/cli": "^0.0.1-alpha.31"
   },
   "gqless": {
-    "url": "https://graphql-pokemon.now.sh/",
+    "url": "https://api.spacex.land/graphql/",
     "outputDir": "src/graphql"
   }
 }

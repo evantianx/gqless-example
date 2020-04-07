@@ -1,25 +1,35 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Suspense } from 'react';
+import { query } from './graphql';
+import { graphql } from '@gqless/react';
 
+const SpaceList = graphql(() => (
+  <div>
+    {query.launchesPast({ limit: 10 }).map((launch) => (
+      <div key={launch.id}>
+        <h2>mission name: {launch.mission_name}</h2>
+        <ul>
+          {launch.ships.map((ship) => (
+            <li key={ship.id}>
+              <h3 onClick={ship.showActive}>{ship.name}</h3>
+              {ship.image ? (
+                <img
+                  src={ship.image}
+                  alt={ship.name}
+                  style={{ width: '25rem' }}
+                />
+              ) : null}
+            </li>
+          ))}
+        </ul>
+      </div>
+    ))}
+  </div>
+));
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Suspense fallback={<span>loading...</span>}>
+      <SpaceList />
+    </Suspense>
   );
 }
 
